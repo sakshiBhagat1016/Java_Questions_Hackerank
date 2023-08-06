@@ -1,0 +1,47 @@
+A Group of 6 friends boarded the flight from Delhi to Mumbai and while returning 2 of them returned back to Delhi from Mumbai and 3 of them visited goa and returned back to Delhi. The airline offered one-way discount of 10% and round-trip discount of 20% and Multi city discount of 30%. Now calculate the Total Price they spent for the flight ticket.
+
+Input Format
+5000
+10000
+15000
+
+Constraints
+User input as Flight ticket Per Person - One-Way Fare, Round Trip Fare and Multi-City Fare
+Calculate the Total Price they spent for the flight ticket
+
+Output Format
+52000
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int  a,b,c,final_1;
+        a=s.nextInt();
+        b=s.nextInt();
+        c=s.nextInt();
+        
+        int disc_a=10*(a/100);
+        int a_f=a-disc_a;
+        
+        int disc_b=20*(b/100);
+        int b_f=b-disc_b;
+        
+        int disc_c=30*(c/100);
+        int c_f=c-disc_c;
+        
+            a_f = a_f ;
+            b_f = b_f*2 ;
+            c_f = c_f*3;
+         final_1 = a_f+b_f+c_f;
+        System.out.println(final_1);
+        
+        
+        
+    }
+}

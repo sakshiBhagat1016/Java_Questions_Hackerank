@@ -1,0 +1,34 @@
+Alice, in a game, is supposed to take a number as a input from the other participant. The number to be entered is otherwise supposed to be a positive number, Alice doesn’t rely if correct input is given. Write a program code to convert the input into an absolute positive value.
+
+Input Format
+a number which is either positive or negative
+
+Constraints
+input is a int number
+
+Output Format
+a poositive number
+
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        
+        int x ;
+        
+        x=s.nextInt();
+        // b=s.nextLine();
+        if(x<0){
+            x=x*(-1);
+        }
+        System.out.println(x);
+        
+    }
+}

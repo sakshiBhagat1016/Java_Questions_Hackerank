@@ -1,0 +1,66 @@
+//Shyam asked him frieds Venu to devlop a program which is use to perfome arithmetic operation. He told that When I will enter two number and operator. It will perform operation based on given operator and result will display.
+
+//Input Format
+//Line 1: Enter number 1: 5 Line 2: Enter number 2: 5 Line 3: Enter operator : +
+
+//Constraints
+//number should be integer number.
+
+//Output Format
+//Result: 10
+
+
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        // System.out.println("Hello, World!");
+        Scanner s=new Scanner(System.in);
+        int a , b ;
+        String c;
+        // System.out.println("enter 2 number");
+        a=s.nextInt();
+        b=s.nextInt();
+        c=s.next();
+
+
+
+        switch(c) {
+            case "+":
+                // code block
+
+                System.out.println(a+b);
+                break;
+            case "-":
+                // code block
+                System.out.println(a-b);
+                break;
+            case "*":
+                // code block
+                System.out.println(a*b);
+                break;
+            case "/":
+                // code block
+                System.out.println(a/b);
+                break;
+            case "%":
+                // code block
+                System.out.println(a%b);
+                break;
+            default:
+                // code block
+                System.out.println("Invalid arithmetic operators");
+        }
+
+
+
+
+    }
+}

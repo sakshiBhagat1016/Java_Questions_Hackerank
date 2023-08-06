@@ -1,0 +1,39 @@
+Ashmita is in standared 7th,and not able to remember multiple of any number. So , help her to display the multiple of particular digit upto 10, which is entered by her.
+
+Input Format
+First line display a number which is entered by ashmita.
+
+Constraints
+only integer numbers are acceptable.
+
+Output Format
+Multiple of particular number is displayed upto 10.
+
+Sample Input 0
+2
+
+Sample Output 0
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+2 x 4 = 8
+2 x 5 = 10
+2 x 6 = 12
+2 x 7 = 14
+2 x 8 = 16
+2 x 9 = 18
+2 x 10 = 20
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+public static void main(String[] args) {
+Scanner sl= new Scanner(System.in);
+int a= sl.nextInt();
+for(int i=1;i<=10;i++){
+System.out.println(a+" x "+i+" = "+ (a*i));
+}
+}
+}

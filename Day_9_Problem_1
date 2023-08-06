@@ -1,0 +1,79 @@
+Mehar's father wants Mehar to develop a program in which he wants to calculate the prize of the t-shirt. Prize of T-shirt = Cost Price + 18% GST. Develop an application in which Mehar's father gets Price of each t-shirt
+
+Input Format
+Integer value(Price of t-shirt) GST value(18%)
+
+Constraints
+Price should be an integer value
+Price should be greater than 450
+
+Output Format
+Print total price including GST.
+
+Sample Input 0
+546
+
+Sample Output 0
+644.28
+
+Sample Input 1
+350
+
+Sample Output 1
+Invalid Input
+
+
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    
+    
+    
+    static boolean isInteger(double N)
+{
+ 
+    // Convert float value
+    // of N to integer
+    int X = (int)N;
+    double temp2 = N - X;
+ 
+    // If N is not equivalent
+    // to any integer
+    if (temp2 > 0)
+    {
+        return false;
+    }
+    return true;
+}
+    
+    
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s = new Scanner(System.in);
+        float price;
+        float y;
+        price = s.nextFloat();
+        y = (((18 * price) / 100));
+
+        
+        if(price<450){
+            System.out.println("Invalid Input");
+        }
+        else{
+            
+            if (isInteger(y)) {
+            int intRate = (int) y;
+            int intprice = (int) price;
+            System.out.println(intprice + intRate);
+        } else {
+            int intprice = (int) price;
+            System.out.println(intprice + y);
+
+        }       
+        }   
+    }
+}

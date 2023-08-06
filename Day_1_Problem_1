@@ -1,0 +1,43 @@
+//In a course students are had 2 code based test, one project and one quiz. Enter their marks scored in all the CA components. Print the sum of all the components.
+//
+//        Input Format:-
+//        First line will contain marks of CBT1
+//        Second line will contain marks of CBT2
+//        Third line will contain marks of project
+//        Fourth line will contain marks of quiz
+//
+//        Constraints:-
+//        CBT1 and CBT2 marks will be between 0 and 20
+//        Project marks should be between 0 and 15
+//        Quiz marks should be between 0 and 5
+//
+//        Output Format:-
+//        One numeric value printing sum of CA marks
+
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        float a , b , project , quiz;
+        a=s.nextFloat();
+        b=s.nextFloat();
+        project=s.nextFloat();
+        quiz=s.nextFloat();
+
+        if (a >= 0 & b >= 0 & a < 20 & b<20 & project < 15 & project>=0 & quiz < 5 & quiz>=0 ){
+                    float sum = a+b+project+quiz;
+            int intsum = (int) sum;
+                    System.out.println(intsum);
+                
+        }
+        else {
+            System.out.println("Invalid Input");
+        }
+
+    }
+}

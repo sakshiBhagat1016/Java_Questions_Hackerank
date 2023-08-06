@@ -1,0 +1,50 @@
+//Shruti is running a jewellery shop. She got calls from her customers to know the current price of silver and gold in different weights. Write a program to help Shruti to calculate price in the different weights when Shruti knows the weight of 1 Kg. Silver and 10 gm. Gold.
+
+//Input Format
+//First line will contain a number representing 1Kg. Silver price.
+//Second line will contain a number representing 10gm. Gold Price.
+//Third Line will contain a String value Silver/Gold representing user input to know the price.
+//Fourth line will contain weight of silver/gold in grams for which user want price.
+
+//Constraints
+//Price cannot be -ve and maximum can be 1000000.
+//Weights entered by user can be between 0.01 gm to 1000 gms.
+
+//Output Format
+//One number representing value of gold/silver asked by user for a particular weight.
+
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+        double x=sc.nextDouble();
+        double y=sc.nextDouble();
+        sc.nextLine();
+        String str=sc.nextLine();
+        double z=sc.nextDouble();
+        double a=x/1000;
+        double b=y/10;
+        double n;
+        double o;
+        if(z<0.01 || z>1000)
+        {
+            System.out.println("Invalid Input");
+        }
+        else
+        {
+            if(str.equals("Silver"))
+        {
+            n=a*z;
+            System.out.println((int)n);
+        }
+        else
+        {
+            o=b*z;
+            System.out.println((int)o);
+        }
+        }
+    }
+}

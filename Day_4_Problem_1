@@ -1,0 +1,35 @@
+//Smith when to a Mall to play a balloon game where his has to shoot 2 kinds of balloon which are colored: White & Red. White balloon carries 1 point and Red balloon carries 2 points. Smith shot certain no. of White and Red balloons in the game. Find and print the total no. of scores he makes in this game.
+
+//Input Format
+//In First input line, enter total number of White balloons shot. In Second input line, enter total number of Red balloons shot.
+
+//Constraints
+//Enter only integer (positive) value. 0<=n<=100
+
+//Output Format
+//Print the total no. of scores Smith makes in this game. If any input is given negative, then total scores should be counted as 0.
+
+
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s=new Scanner(System.in);
+        int a,b;
+        a=s.nextInt();
+        b=s.nextInt();
+        if(a<=100 & a>=0 & b<=100 & b>=0){
+            System.out.println((a*1)+(b*2) );
+        }
+        else if(a<0 || b<0){
+            System.out.println("0");
+        }
+    }
+}
